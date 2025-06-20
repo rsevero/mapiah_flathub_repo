@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/flatpak/flatpak-builder/main/data/flatpak-manifest.schema.json
 
 ---
-app-id: org.mapiah.Mapiah
+app-id: org.mapiah.mapiah
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 command: mapiah
 separate-locales: false
@@ -13,7 +13,7 @@ finish-args:
   - --socket=wayland
   - --device=dri
 modules:
-  - name: Mapiah
+  - name: mapiah
     buildsystem: simple
     only-arches:
       - x86_64
@@ -21,8 +21,8 @@ modules:
       - "./build-flatpak.sh"
     sources:
       - type: file
-        url: file:///devel/mapiah/Mapiah-Linux-Portable.tar.gz
-        sha256: 5dc57e4f5b84e6527098cb1e011ef50413c660147f5da7dfbfb507527e44eb83
+        url: file:///home/rodrigo/devel/mapiah/mapiah-Linux-Portable.tar.gz
+        sha256: e50a2082626578a2b478639df46607edb6fa0b7401b691b12fbf2e282fc2aef8
       - type: dir
         path: ../mapiah
       - type: file

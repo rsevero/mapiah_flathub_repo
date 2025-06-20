@@ -34,8 +34,8 @@ set -x
 
 
 # No spaces in project name.
-projectName=Mapiah
-projectId=org.mapiah.Mapiah
+projectName=mapiah
+projectId=org.mapiah.mapiah
 executableName=mapiah
 
 
